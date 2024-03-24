@@ -44,7 +44,7 @@ export const metadata = {
 export default function StaffSection() {
     return (
       <section
-        className="min-h-screen flex flex-col items-center py-32 md:py-40 px-5 bg-neutral bg-opacity-80 " 
+        className="min-h-screen flex flex-col items-center py-20 px-5 bg-neutral bg-opacity-80 " 
         id="staff"
         key="staff"
         style={{

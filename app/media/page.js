@@ -47,12 +47,12 @@ export const metadata = {
 export default function MediaSection() {
   return (
     <section
-      className="min-h-screen flex flex-col items-center py-32 md:py-40 px-10"
+      className="min-h-screen flex flex-col items-center py-20 px-10"
       id="media"
       key="media"
     >
       <div
-        className="w-full"
+        className="w-full aos-init aos-animate"
         data-aos="fade-in"
         data-aos-duration="300"
         data-aos-anchor-placement="center"

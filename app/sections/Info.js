@@ -23,7 +23,7 @@ export default function InfoSection() {
   return (
     <section className="min-h-screen py-40 px-10" id="radio" key="radio">
       <div
-        className="w-full"
+        className="w-full aos-init"
         data-aos="fade-in"
         data-aos-duration="300"
         data-aos-anchor-placement="center"

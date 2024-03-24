@@ -45,7 +45,7 @@ export default function PaginaEventos() {
       data-aos-duration="500"
       data-aos-anchor-placement="center"
       data-aos-easing="linear"
-      className="flex min-h-screen flex-col items-center justify-between py-32 md:py-40 p-24 transition-all duration-500"
+      className="flex min-h-screen flex-col items-center justify-between py-20 p-24 transition-all duration-500"
     >
       <hgroup className="text-center">
         <div role="alert" className="alert alert-info opacity-70 mb-5">

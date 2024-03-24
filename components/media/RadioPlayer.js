@@ -12,22 +12,19 @@ export default function RadioPlayer() {
           </h2>
         </div>
 
-        <div className="max-w-5xl">
-          <audio
+        <audio
             controls="controls"
             preload="none"
-            className="w-full p-2 rounded-2xl shadow-lg bg-transparent my-3"
+            className="max-w-5xl md:max-w-7xl p-2 rounded-2xl shadow-lg bg-transparent my-3"
             data-theme="dark"
           >
             <source
               src="https://stream.zeno.fm/9tbnnkpcu68uv"
               type="audio/mpeg"
-              className=""
             />
             Tu navegador no soporta el elemento de audio.
           </audio>
-        </div>
-
+   
         <div className="grid grid-cols-1 md:grid-cols-2">
           <Link
             href="https://www.youtube.com/embed/videoseries?list=PLVt8iBuEaBKoaTNbW76uZLjgz_mNPAdgX"
