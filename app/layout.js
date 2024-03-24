@@ -43,7 +43,7 @@ export const metadata = {
     "logística e-commerce",
   ],
   creator: "Red Logística",
-  metadataBase: new URL("http://127.0.0.1:3000/index.html"),
+  metadataBase: new URL("https://redlogistica.github.io/red-logistica/"),
   title: { template: "%s | Red Logística", default: "Red Logística" },
   description:
     "Red Logística: Radio, entrevistas, noticias y más sobre logística. Tu fuente de información y entretenimiento sobre el mundo logístico",
@@ -51,7 +51,7 @@ export const metadata = {
     title: "Red Logística: Radio, entrevistas, noticias y más sobre logística",
     description:
       "Tu fuente de información y entretenimiento sobre el mundo logístico.",
-    url: "https://redlogistica.com",
+    url: "https://redlogistica.github.io/red-logistica/",
     siteName: "Red Logística",
     locale: "es-es",
     type: "website",

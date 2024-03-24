@@ -1,8 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/media/page": "app/media/page.js",
-  "/team/page": "app/team/page.js",
-  "/eventos/page": "app/eventos/page.js",
-  "/not-found": "app/not-found.js",
-  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js"
-}
