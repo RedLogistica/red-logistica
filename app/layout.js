@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
       <body
         data-theme="light"
         className={`${titleFont.variable} ${textFont.variable} ${buttonFont.variable}
-        bg-gradient-to-t from-teal-300 to-slate-100
+        bg-gradient-to-tr from-purple-200 to-slate-100
         `}
       >
         <Navigation />

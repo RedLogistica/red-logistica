@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function InfoSection() {
   const content = {
     // Título:
-    title: "Sintonizá nuestra transmisión en vivo",
+    title: "SINTONIZÁNOS EN VIVO",
     // Subtítulo:
-    subtitle: "Los sábados de 14 a 15 hs.",
+    subtitle: "",
     // Texto principal:
     text: "Entrevistas, novedades, discusiones y más. Todo sobre el mundo de la logística y la cadena de suministro.",
     // Llamado a la acción:
     text2:
-      "Un espacio que busca hacer logística para el pueblo, acercando información clave y análisis profundos. ",
+      "Un espacio que busca acercar información clave y análisis profundos. ",
     text3:
       "Uníte a nosotros cada sábado para mantenerte al tanto de todo lo que acontece en este apasionante universo.",
 
@@ -33,11 +33,7 @@ export default function InfoSection() {
           {/* ==============*/}
           <hgroup className="text-center mb-10">
             {/* titulo */}
-            <h2 className=" text-3xl md:text-5xl font-bold">{content.title}</h2>
-            {/* badge */}
-            <span className="badge badge-neutral badge-lg">
-              {content.subtitle}
-            </span>
+            <h2 className=" text-4xl md:text-6xl font-bold">{content.title}</h2>
           </hgroup>
           {/* ============== */}
           <div className="text-2xl max-w-5xl text-center grid  grid-cols-1 md:grid-cols-3 gap-3">
@@ -53,7 +49,7 @@ export default function InfoSection() {
             </div>
           </div>
           <div className="py-10">
-            <Link className="btn btn-primary mx-1" href={"/media"}>
+            <Link className="btn btn-neutral mx-1" href={"/media"}>
               {content.cta}
             </Link>
           </div>

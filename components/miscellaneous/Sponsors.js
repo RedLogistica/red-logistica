@@ -9,7 +9,7 @@ export default function Sponsors() {
     >
       <section className="flex flex-col flex-nowrap items-center min-h-screen py-20">
         <hgroup>
-          <h2 className="text-4xl py-5">SPONSORS</h2>
+          <h2 className="text-4xl md:text-6xl font-bold py-5">SPONSORS</h2>
         </hgroup>
         <div className="flex flex-row flex-wrap gap-3 items-center">
           <div className="avatar">

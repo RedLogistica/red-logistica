@@ -58,6 +58,7 @@ export default function MediaSection() {
         data-aos-anchor-placement="center"
         data-aos-easing="linear"
       >
+
         <hgroup className="text-center mb-2">
           <h2 className=" text-4xl md:text-5xl font-bold">
             ESCUCHÁNOS EN VIVO
@@ -66,8 +67,9 @@ export default function MediaSection() {
             Todos los sábados de 14-15 hs
           </span>
         </hgroup>
-        <div className="text-center">
-          <p className="text-2xl text-neutral leading-none">
+
+        <div className="text-center flex flex-col items-center justify-center py-5">
+          <p className="text-2xl text-neutral leading-none max-w-md">
             Escuchá nuestra transmisión en vivo por
             <Link
               href="https://conurbaniaparque.com/index.php/radio-2/"
@@ -98,7 +100,10 @@ export default function MediaSection() {
           </p>
         </div>
 
+
         <StreamPlayer />
+
+
       </div>
     </section>
   );

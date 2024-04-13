@@ -1,6 +1,6 @@
 import TopBanner from "@/app/sections/TopBanner";
 import Info from "./sections/Info";
-import Feed from "./sections/Feed";
+import Description from "./sections/Description";
 import Sponsors from "@/components/miscellaneous/Sponsors";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     >
       <TopBanner />
       <Info />
-      <Feed />
+      <Description/>
       <Sponsors />
     </main>
   );

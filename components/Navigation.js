@@ -14,8 +14,8 @@ export default function Navigation() {
   };
 
   return (
-    <section className="sticky w-full top-0 z-[9999999999]">
-      <header className="navbar px-14 py-3 bg-teal-50 bg-opacity-100 nav">
+    <section className="sticky w-full top-0 bg-black z-[9999999999]" data-theme="night">
+      <header className="navbar px-14 py-3 nav">
         <div className="navbar-start">
           <Logo medida={80} clases={"rounded-full"} />
         </div>

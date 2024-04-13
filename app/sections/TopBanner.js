@@ -1,18 +1,23 @@
 import Carrusel from "@/app/ui/Carrusel";
 export default function TopBanner() {
+
+  const dev_url = process.env.DEV_URL+"imgs/bannerimg.webp";
+  const prod_url = "imgs/bannerimg.webp";
+  const image_path = dev_url ? dev_url : prod_url;
+
   const contenido = [
     {
       /* SETUPS */
       id: 1,
-      titulo: "RADIO RED LOGÍSTICA",
+      titulo: "RED LOGÍSTICA RADIO",
       subtitulo:
         "Sábados 14:00 -15:00 hs. | Acompañános por YouTube, Twitch y por Radio Online",
       accion: "Ver Más",
       accionHref: "#radio",
-      imagen: "url(imgs/staff/staff.webp)",
+      imagen: `url(${image_path})`,
       /* ESTILOS */
-      clases: "bg-indigo-950 bg-opacity-80",
-      clasesBtn: "btn btn-accent btn-lg",
+      clases: "bg-black bg-opacity-80",
+      clasesBtn: "btn btn-accent",
       clasesSub: "text-cyan-100",
     },
   ];
