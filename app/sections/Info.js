@@ -15,6 +15,7 @@ export default function InfoSection() {
       "Uníte a nosotros cada sábado para mantenerte al tanto de todo lo que acontece en este apasionante universo.",
 
     cta: "Ver Medios",
+    cta2: "Nuestro Proyecto",
     // Texto secundario (opcional):
     texto2:
       "Sumate a la comunidad y participá de sorteos, concursos y actividades exclusivas.",
@@ -51,6 +52,9 @@ export default function InfoSection() {
           <div className="py-10">
             <Link className="btn btn-neutral mx-1" href={"/media"}>
               {content.cta}
+            </Link>
+            <Link className="btn btn-neutral btn-outline mx-1" href={"#proyecto"}>
+              {content.cta2}
             </Link>
           </div>
         </section>

@@ -52,7 +52,7 @@ export default function MediaSection() {
       key="media"
     >
       <div
-        className="w-full aos-init aos-animate"
+        className="w-full aos-init"
         data-aos="fade-in"
         data-aos-duration="300"
         data-aos-anchor-placement="center"
@@ -60,10 +60,10 @@ export default function MediaSection() {
       >
 
         <hgroup className="text-center mb-2">
-          <h2 className=" text-4xl md:text-5xl font-bold">
+          <h2 className="mb-5 text-5xl md:text-5xl lg:text-7xl font-bold">
             ESCUCHÁNOS EN VIVO
           </h2>
-          <span className="badge badge-neutral badge-lg">
+          <span className="badge badge-accent badge-lg">
             Todos los sábados de 14-15 hs
           </span>
         </hgroup>

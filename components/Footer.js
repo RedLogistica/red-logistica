@@ -4,11 +4,12 @@ import {IoLogoInstagram} from "react-icons/io5"
 
 export default function Footer() {
   return (
-    <footer className="footer p-10 text-neutral-content bg-neutral">
+    <footer className="footer p-10 text-neutral-content bg-black">
       <aside>
         <Logo />
         <p>Red Logística | Radio y Novedades</p>
-        <p>© 2024 Red Logística | Design By EspaX Digital</p>
+        <p>© 2024 Red Logística</p>
+        <p><Link href="https://www.esparxdigital.com" target="_blank" className="text-xs">Design By Juan Esparza | EspaX Digital</Link></p>
       </aside>
       <nav>
         <h2 className="footer-title">Social</h2>

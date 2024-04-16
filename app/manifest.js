@@ -3,7 +3,7 @@ export default function manifest() {
       name: 'Red logística',
       short_name: 'Red Logística',
       description: 'Radio, noticias y más',
-      start_url: '/',
+      start_url: '/red-logistica/',
       display: 'standalone',
       background_color: '#fff',
       theme_color: '#fff',

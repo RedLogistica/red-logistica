@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import Link from "next/link";
-import {IoArrowUp} from "react-icons/io5"
+import {IoArrowUpSharp} from "react-icons/io5"
 
 export default function ToTopButton() {
   const [isVisible, setIsVisible] = useState(false); // State for button visibility
@@ -23,11 +22,11 @@ export default function ToTopButton() {
 
   return (
     <div
-      className={`fixed bottom-3 right-3 z-[99] rounded-full bg-neutral bg-opacity-80 text-neutral-content shadow-sm 
+      className={`fixed bottom-3 right-3 z-[99] rounded-full bg-black border border-[0.25] border-zinc-400 border-opacity-60 text-neutral-content shadow-sm 
                 ${isVisible ? '' : 'hidden'}`} // Toggle visibility based on state
     >
-      <button id="boton-ir-arriba" className="text-5xl" onClick={scrollToTop} aria-label='Subir hasta arriba de la página'>
-        <IoArrowUp />
+      <button id="boton-ir-arriba" className="text-4xl p-2" onClick={scrollToTop} aria-label='Subir hasta arriba de la página'>
+        <IoArrowUpSharp />
       </button>
     </div>
   );

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import AnimateContent from "./ui/AnimateContent";
 import ToTopButton from "@/components/button/ToTopButton";
 import "./styles/globals.css";
+import robots from "./robots";
 
 export const metadata = {
   generator: "Next.js",
@@ -56,17 +57,22 @@ export const metadata = {
     locale: "es-es",
     type: "website",
   },
-
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+  },
   alternates: {
     canonical: "/",
   },
+  manifest: "https://redlogistica.github.io/red-logistica/manifest.json",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body
-        data-theme="light"
+        data-theme="corporate"
         className={`${titleFont.variable} ${textFont.variable} ${buttonFont.variable}
         bg-gradient-to-tr from-purple-200 to-slate-100
         `}

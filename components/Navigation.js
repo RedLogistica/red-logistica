@@ -14,10 +14,15 @@ export default function Navigation() {
   };
 
   return (
-    <section className="sticky w-full top-0 bg-black z-[9999999999]" data-theme="night">
+    <section
+      className="sticky w-full top-0 bg-black z-[9999999999]"
+      data-theme="night"
+    >
       <header className="navbar px-14 py-3 nav">
         <div className="navbar-start">
-          <Logo medida={80} clases={"rounded-full"} />
+          <Link href="/">
+            <Logo medida={80} clases={"rounded-full"} />
+          </Link>
         </div>
         <nav className="navbar-center hidden lg:block">
           <ul className="menu menu-horizontal">
@@ -65,7 +70,7 @@ export default function Navigation() {
       </header>
       <div className="sidenav-wrapper" onClick={closeNav}>
         <aside
-          className={`sidenav bg-cyan-50 min-h-screen max-w-xs ${
+          className={`sidenav bg-neutral text-neutral-content min-h-screen max-w-xs ${
             isAsideOpen ? "open block" : "hidden"
           }`} // Apply open class dynamically
         >
@@ -98,7 +103,8 @@ export default function Navigation() {
               className="btn btn-ghost text-2xl text-pink-700"
               aria-label="Ir a perfil de instagram de Red Logística"
             >
-              <IoLogoInstagram /> <span className="text-sm text-slate-400">Instagram</span>
+              <IoLogoInstagram />{" "}
+              <span className="text-sm text-slate-400">Instagram</span>
             </Link>
           </div>
         </aside>

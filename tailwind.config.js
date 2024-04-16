@@ -10,16 +10,8 @@ module.exports = {
     themes: [
       "light",
       "dark",
-      "dim",
-      "forest",
-      "aqua",
-      "emerald",
-      "corporate",
-      "retro",
-      "cupcake",
-      "winter",
-      "synthwave",
       "night",
+      "corporate"
     ],
   },
 };

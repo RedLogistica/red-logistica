@@ -1,9 +1,11 @@
 import Carrusel from "@/app/ui/Carrusel";
 export default function TopBanner() {
 
-  const dev_url = process.env.DEV_URL+"imgs/bannerimg.webp";
-  const prod_url = "imgs/bannerimg.webp";
-  const image_path = dev_url ? dev_url : prod_url;
+  function getImgPath( imgName ) {
+    const imgPath = `/red-logistica/imgs/${imgName}`;
+    return imgPath;
+  }
+  
 
   const contenido = [
     {
@@ -14,7 +16,7 @@ export default function TopBanner() {
         "Sábados 14:00 -15:00 hs. | Acompañános por YouTube, Twitch y por Radio Online",
       accion: "Ver Más",
       accionHref: "#radio",
-      imagen: `url(${image_path})`,
+      imagen: `url(${getImgPath("bannerimg.webp")})`,
       /* ESTILOS */
       clases: "bg-black bg-opacity-80",
       clasesBtn: "btn btn-accent",
