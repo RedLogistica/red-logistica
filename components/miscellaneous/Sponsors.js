@@ -6,8 +6,10 @@ function getImgPath( imgName ) {
 export default function Sponsors() {
 
   const sponsorsList = [
-    { sponsor: "Hub Logístico", img: "hublogisticologo.webp" },
     { sponsor: "Conurbania", img: "conurbania.webp" },
+    { sponsor: "Hub Logístico", img: "hublogisticologo.webp" },
+    { sponsor: "Consultora Si", img: "consultorasi.webp" },
+    { sponsor: "HLC Seguros", img: "hlcseguros.webp" },
   ];
 
   return (

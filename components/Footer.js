@@ -9,7 +9,7 @@ export default function Footer() {
         <Logo />
         <p>Red Logística | Radio y Novedades</p>
         <p>© 2024 Red Logística</p>
-        <p><Link href="https://www.esparxdigital.com" target="_blank" className="text-xs">Design By Juan Esparza | EspaX Digital</Link></p>
+        <p><Link href="https://www.esparxdigital.com" target="_blank" className="text-xs text-gray-200">Design By Juan Esparza | EsparX Digital</Link></p>
       </aside>
       <nav>
         <h2 className="footer-title">Social</h2>
