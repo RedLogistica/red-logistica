@@ -10,6 +10,7 @@ export default function Sponsors() {
     { sponsor: "Hub Logístico", img: "hublogisticologo.webp" },
     { sponsor: "Consultora Si", img: "consultorasi.webp" },
     { sponsor: "HLC Seguros", img: "hlcseguros.webp" },
+    { sponsor: "Transporte Moretti", img: "moretti.webp" },
   ];
 
   return (
