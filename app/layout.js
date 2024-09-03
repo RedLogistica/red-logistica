@@ -5,6 +5,7 @@ import MobileNav from "@/components/MobileNav";
 import Footer from "@/components/Footer";
 import ToTopButton from "@/components/button/ToTopButton";
 import { layoutMetadata } from "./utils/metadata/metaLayout";
+import Navigation from "@/components/Navigation";
 
 export const metadata = { ...layoutMetadata };
 
@@ -12,11 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body data-theme="nord" className={`${titleFont.variable} ${textFont.variable} ${buttonFont.variable}`}>
-        <DesktopNav />
+        <Navigation />
         {children}
         <ToTopButton />
         <Footer />
-        <MobileNav/>
       </body>
     </html>
   );

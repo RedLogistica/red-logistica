@@ -30,14 +30,16 @@ a,
   font-family: var(--font-button);
 }
 
-.sidenav {
+#mobile-nav {
+  @apply w-[85%]  fixed top-28 py-20 right-0 z-[49]  bg-base-200 glass bg-opacity-95 text-black min-h-screen max-w-xs lg:hidden;
+  @apply -right-[85%];
   opacity: 0;
-  transition: all opacity 0.5s;
+  transition: all  0.5s ease-in-out;
 }
 
-.open {
+#mobile-nav.open {
+  @apply right-0;
   opacity: 1;
-  transition: all 0.5s;
 }
 
 .main-title {
@@ -61,24 +63,14 @@ a,
   background-image: url("/red-logistica/imgs/bannerimg.webp");
 }
 
-
-.autoscroll-parent {
-  @apply overflow-hidden relative min-h-16 w-full;
+.bg-media {
+  @apply bg-emerald-300;
+  background-image: url("/red-logistica/imgs/project.webp");
+  background-position: bottom;
+  background-size: cover;
+  background-blend-mode: screen
 }
 
-.autoscroll-element {
-@apply absolute animate-x;
-}
-
-@keyframes animatex {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-x {
-  animation: animatex 10s linear infinite;
+.swap-close {
+  transition: all ease-in-out 0.5s;
 }

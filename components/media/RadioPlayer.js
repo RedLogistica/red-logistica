@@ -3,9 +3,10 @@ import { IoLogoYoutube, IoLogoTwitch, IoMic } from "react-icons/io5";
 export default function RadioPlayer() {
   return (
     <article className="w-full items-center justify-center flex my-3 py-3">
-      <div className="flex flex-col w-full rounded-lg p-4 items-center align-middle">
-        <div className="grid grid-cols-1 md:grid-cols-1 ">
-          <div className="items-center h-full w-full p-2">
+      <div className="flex flex-col w-full rounded-lg items-center align-middle">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+
+          <div className="items-center min-h-60 md:h-96 w-full">
             <div className="bg-black w-full h-full rounded-md p-3 py-10 flex flex-col flex-nowrap items-center justify-center text-center">
               <IoMic className="text-4xl text-white" />
               <h2 className="card-title text-2xl text-neutral-content text-center">
@@ -31,8 +32,8 @@ export default function RadioPlayer() {
             target="_blank"
             className="cursor-pointer w-full"
           >
-            <div className="flex flex-nowrap w-full text-center justify-center items-center h-full p-2">
-              <div className="p-3 bg-red-700 rounded-md shadow text-center justify-center flex flex-col items-center w-full py-10 ">
+            <div className="flex flex-nowrap w-full text-center justify-center items-center">
+              <div className="p-3 bg-red-700 rounded-md shadow text-center justify-center flex flex-col items-center w-full py-10 min-h-60 md:h-96">
                 <IoLogoYoutube className="text-5xl text-white" />
                 <p className="text-2xl text-white">YouTube</p>
                 <p className="text-neutral-content">
@@ -48,15 +49,15 @@ export default function RadioPlayer() {
             className="cursor-pointer w-full"
             target="_blank"
           >
-            <div className="flex flex-nowrap w-full text-center justify-center items-center h-full  p-2">
-              <div className="p-3 bg-cyan-700 rounded-md shadow text-center justify-center flex flex-col items-center w-full py-10">
-                <IoLogoTwitch className="text-5xl text-white" />
-                <p className="text-2xl text-white">Twitch</p>
-                <p className="text-neutral-content">
+
+              <div className="p-3 bg-emerald-400 rounded-md shadow text-center justify-center flex flex-col items-center w-full py-10 min-h-60 md:h-96">
+                <IoLogoTwitch className="text-5xl text-black" />
+                <p className="text-2xl">Twitch</p>
+                <p className="">
                   Mirá el straming por el canal de Conurbania de Twitch
                 </p>
               </div>
-            </div>
+
           </Link>
         </div>
       </div>

@@ -47,59 +47,62 @@ export const metadata = {
 export default function MediaSection() {
   return (
     <section
-      className="min-h-screen flex flex-col items-center py-20 px-10"
+      className="bg-media  flex flex-col items-center"
       id="media"
       key="media"
     >
-      <div
+      <article
+        className="w-full"
       >
+        <div className="w-full min-h-screen max-w-5xl mx-auto px-5  py-20">
 
-        <hgroup className="text-center mb-2">
-          <h2 className="mb-5 text-5xl md:text-5xl lg:text-7xl font-bold">
-            ESCUCHÁNOS EN VIVO
-          </h2>
-          <span className="badge badge-accent badge-lg">
-            Todos los sábados de 14-15 hs
-          </span>
-        </hgroup>
+          <hgroup className="md:text-center mb-2 z-10">
+            <h2 className="content-title">
+              ESCÚCHANOS EN <span className="text-emerald-500">VIVO</span>
+            </h2>
+            <span className="badge badge-ghost bg-black text-white badge-lg border-none">
+              Todos los sábados de 14-15:30 hs
+            </span>
+          </hgroup>
 
-        <div className="text-center flex flex-col items-center justify-center py-5">
-          <p className="text-2xl text-neutral leading-none max-w-md">
-            Escuchá nuestra transmisión en vivo por
-            <Link
-              href="https://conurbaniaparque.com/index.php/radio-2/"
-              target="_blank"
-              className="text-base link"
-            >
-              {" "}
-              Radio Conurbania
-            </Link>{" "}
-            o mirála por{" "}
-            <Link
-              href="https://www.youtube.com/@conurbania"
-              target="_blank"
-              className="text-base link"
-            >
-              {" "}
-              YouTube
-            </Link>{" "}
-            y{" "}
-            <Link
-              href="https://www.twitch.tv/radioconurbania"
-              target="_blank"
-              className="text-base link"
-            >
-              {" "}
-              Twitch
-            </Link>
-          </p>
+          <div className="md:text-center flex flex-col items-center justify-center py-5  z-10 ">
+            <p className="text-content">
+              Escuchá nuestra transmisión en vivo por
+              <Link
+                href="https://conurbaniaparque.com/index.php/radio-2/"
+                target="_blank"
+                className="text-base link"
+              >
+                {" "}
+                Radio Conurbania
+              </Link>{" "}
+              o mirála por{" "}
+              <Link
+                href="https://www.youtube.com/@conurbania"
+                target="_blank"
+                className="text-base link"
+              >
+                {" "}
+                YouTube
+              </Link>{" "}
+              y{" "}
+              <Link
+                href="https://www.twitch.tv/radioconurbania"
+                target="_blank"
+                className="text-base link"
+              >
+                {" "}
+                Twitch
+              </Link>
+            </p>
+          </div>
+
+
+          <StreamPlayer />
+
+
         </div>
-
-
-        <StreamPlayer />
-
-
-      </div>
+      </article>
     </section>
   );
 }

@@ -9,7 +9,7 @@ export default function TheProject() {
                         <div className="relative h-64 sm:h-80 lg:h-full">
                             <img
                                 alt=""
-                                src="https://images.pexels.com/photos/7203788/pexels-photo-7203788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                src="https://cdn.pixabay.com/photo/2017/03/21/02/00/label-2160913_1280.png"
                                 className="absolute object-fill inset-0 h-full w-full  rounded-lg shadow-lg"
                             />
                         </div>

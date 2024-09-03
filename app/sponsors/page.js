@@ -1,6 +1,7 @@
 import SponsorsGrid from "@/components/miscellaneous/SponsorsGrid";
 import { sponsorsMetadata } from "../utils/metadata/metaSponsors";
 import Section from "@/components/SectionLayout";
+import ContactWhatsappBtn from "@/components/button/ContactWhatsappBtn";
 
 export const metadata = { ...sponsorsMetadata }
 
@@ -59,6 +60,12 @@ export default function Sponsors() {
                             </p>
                         </div>
                     </div>
+                </section>
+
+                <section className="mt-12 w-full md:text-center">
+                    <ContactWhatsappBtn msg="Hola, me contacto de la página de red logística porque me interesa ser sponsor..." className="btn btn-ghost btn-lg bg-emerald-400">
+                        Contactar
+                    </ContactWhatsappBtn>
                 </section>
             </article>
 

@@ -1,11 +1,9 @@
 import RadioPlayer from "./RadioPlayer";
-import InstaFeed from "../rrss/InstaFeed"
 
 export default function StreamPlayer() {
   return (
-    <div className="items-center w-full flex flex-col flex-nowrap">
+    <div className="w-full">
       <RadioPlayer />
-      <InstaFeed />
     </div>
   );
 }

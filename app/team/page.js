@@ -13,7 +13,7 @@ export default function StaffSection() {
     { nombre: "Antonio Martino", rol: "Panelista Experto en Logística", titulo: "Lic. en Planificación Logística", img: "martino.webp" },
     { nombre: "Pablo Jaquet", rol: "Panelista Experto en Logística", titulo: "Lic. en Planificación Logística", img: "jacket.webp" },
     { nombre: "Hernán Disanto", rol: "Panelista Experto en Logística", titulo: "Lic. en Planificación Logística", img: "disanto.jpg" },
-    { nombre: "Juan E.", rol: "Desarrollo y Diseño", titulo: "Técnico U. en Logística", img: "esparza.jpeg" },
+    { nombre: "J. Esparza", rol: "Back Office Gráfico y Tecnológico", titulo: "Técnico U. en Logística", img: "esparza.jpeg" },
   ];
 
   return (

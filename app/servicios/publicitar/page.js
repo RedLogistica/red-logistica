@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ContactWhatsappBtn from "@/components/button/ContactWhatsappBtn";
 
 export default function Publicidad() {
     return (
@@ -8,7 +8,7 @@ export default function Publicidad() {
                     <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
                         <img
                             alt="imagen"
-                            src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                            src="/red-logistica/imgs/project.webp"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
                     </div>
@@ -23,12 +23,13 @@ export default function Publicidad() {
                             será escuchado por quienes realmente importan.
                         </p>
 
-                        <Link
+                        <ContactWhatsappBtn
                             href="/"
                             className="mt-8 btn btn-ghost bg-emerald-500"
+                            msg="Hola,  me contacto desde la página porque me interesa publicitar mi negocio en su programa."
                         >
                             Me interesa
-                        </Link>
+                        </ContactWhatsappBtn>
                     </div>
                 </div>
             </div>

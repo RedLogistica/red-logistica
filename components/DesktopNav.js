@@ -2,34 +2,24 @@
 import Link from "next/link";
 import Logo from "@/app/ui/Logo";
 import { IoLogoInstagram, IoMenu, IoClose } from "react-icons/io5";
-import { useState, useEffect, useRef } from "react";
-import MobileNav from "./MobileNav";
+import { useEffect, useState } from "react";
 
-export default function DesktopNav(className) {
-  const [isAsideOpen, setIsAsideOpen] = useState(false);
-  const toggleNav = () => {
-    const nav = document.getElementById("mobile-nav");
-    nav.classList.toggle("open")
-  };
-  const closeNav = () => {
-    setIsAsideOpen(false);
-  };
+export default function DesktopNav({ toggleAside, isOpen }) {
 
-  useEffect(() => (
-    document.addEventListener("click", () => {
+  useEffect(() => {
+    function handleClick() {
       dropdownHandler();
-      return (
-        document.removeEventListener("click", () => null)
-      )
-    })
-  ), [])
-
+    }
+    document.addEventListener("click", handleClick);
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
 
   function dropdownHandler() {
     const dropdowns = document.querySelectorAll("details")
     dropdowns.forEach((dropdown) => dropdown.removeAttribute("open"))
   }
-
   return (
     <>
       <div className="bg-black px-4 py-3 text-white z-50">
@@ -64,8 +54,8 @@ export default function DesktopNav(className) {
                   <summary className="cursor-pointer novedades" onClick={dropdownHandler}>Novedades</summary>
                   <ul
                     className="dropdown-content z-[1] menu  bg-base-200 rounded-box lg:min-w-lg p-2 shadow w-60">
-                    <li><Link href={"/eventos"} className="nav-link" onClick={dropdownHandler}>Eventos</Link></li>
-                    <li><Link href={"/team"} className="nav-link" onClick={dropdownHandler}>Noticias</Link></li>
+                    <li><Link href={"/novedades"} className="nav-link" onClick={dropdownHandler}>Eventos</Link></li>
+                    <li><Link href={"/novedades"} className="nav-link" onClick={dropdownHandler}>Noticias</Link></li>
                   </ul>
                 </details>
               </li>
@@ -91,7 +81,7 @@ export default function DesktopNav(className) {
                   </ul>
                 </details>
               </li>
-              <li className=""><Link href="/media" className="">Radio/Streaming</Link></li>
+              <li className=""><Link href="/media" className="bg-emerald-500 text-white">Radio/Streaming</Link></li>
             </ul>
           </section>
           <section className="navbar-end">
@@ -113,9 +103,14 @@ export default function DesktopNav(className) {
                 <input
                   type="checkbox"
                   id="menu-toggle"
+                  onChange={toggleAside}
                 />
-                <IoMenu className="swap-off fill-current text-2xl" />
-                <IoClose className="swap-on fill-current text-2xl" />
+                {isOpen ? (
+                  <IoClose className={`fill-current text-2xl`} />
+                )
+                : (
+                    <IoMenu className={`fill-current text-2xl `} />
+                  )}
               </label>
             </div>
           </section>
