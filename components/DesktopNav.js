@@ -3,11 +3,13 @@ import Link from "next/link";
 import Logo from "@/app/ui/Logo";
 import { IoLogoInstagram, IoMenu, IoClose } from "react-icons/io5";
 import { useState, useEffect, useRef } from "react";
+import MobileNav from "./MobileNav";
 
-export default function DesktopNav() {
+export default function DesktopNav(className) {
   const [isAsideOpen, setIsAsideOpen] = useState(false);
   const toggleNav = () => {
-    setIsAsideOpen(!isAsideOpen);
+    const nav = document.getElementById("mobile-nav");
+    nav.classList.toggle("open")
   };
   const closeNav = () => {
     setIsAsideOpen(false);
@@ -30,7 +32,7 @@ export default function DesktopNav() {
 
   return (
     <>
-      <div className="bg-black px-4 py-3 text-white">
+      <div className="bg-black px-4 py-3 text-white z-50">
         <p className="text-center text-xs font-medium opacity-85">
           Mira nuestro programa todos los sábados de 14 a 15:30. ¡No te lo pierdas!{" "}
           <a href="/red-logistica/media" className="inline-block underline">Ver más</a>
@@ -83,7 +85,7 @@ export default function DesktopNav() {
                     <li>
                       <h2 className="menu-title">Multimedia</h2>
                       <ul>
-                        <li><Link href={"/servicios/publicidad/"} className="nav-link">Publicidad en el programa</Link></li>
+                        <li><Link href={"/servicios/publicitar/"} className="nav-link">Publicidad en el programa</Link></li>
                       </ul>
                     </li>
                   </ul>
@@ -111,8 +113,6 @@ export default function DesktopNav() {
                 <input
                   type="checkbox"
                   id="menu-toggle"
-                  checked={isAsideOpen}
-                  onChange={toggleNav}
                 />
                 <IoMenu className="swap-off fill-current text-2xl" />
                 <IoClose className="swap-on fill-current text-2xl" />
