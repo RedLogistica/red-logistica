@@ -41,10 +41,6 @@ export const metadata = {
 export default function PaginaEventos() {
   return (
     <main
-      data-aos="fade-in"
-      data-aos-duration="500"
-      data-aos-anchor-placement="center"
-      data-aos-easing="linear"
       className="flex min-h-screen flex-col items-center justify-between py-20 p-24 transition-all duration-500"
     >
       <hgroup className="text-center">

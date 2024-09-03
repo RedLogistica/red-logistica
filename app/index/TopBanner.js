@@ -11,14 +11,14 @@ export default function TopBanner() {
     {
       /* SETUPS */
       id: 1,
-      titulo: "RED LOGÍSTICA RADIO",
+      titulo: "PROYECTO RED LOGÍSTICA",
       subtitulo:
         "Sábados 14:00 -15:00 hs. | Acompañános por YouTube, Twitch y por Radio Online",
       accion: "Ver Más",
       accionHref: "#radio",
       imagen: `url(${getImgPath("bannerimg.webp")})`,
       /* ESTILOS */
-      clases: "bg-black bg-opacity-80",
+      clases: "bg-emerald-600 bg-opacity-75",
       clasesBtn: "btn btn-accent",
       clasesSub: "text-cyan-100",
     },

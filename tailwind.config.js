@@ -11,7 +11,9 @@ module.exports = {
       "light",
       "dark",
       "night",
-      "corporate"
+      "corporate",
+      "nord",
+      "wireframe"
     ],
   },
 };

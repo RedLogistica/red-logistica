@@ -58,11 +58,11 @@ export default function Carrusel({
                 }}
               >
                 <div className={`hero-overlay ${item.clases}`}></div>
-                <div className="hero-content text-center text-white">
+                <div className="hero-content text-center text-black">
                   <div className="max-w-screen-2xl">
                     <div>
                       <h1
-                        className={`mb-5 text-5xl md:text-5xl lg:text-7xl font-bold ${item.clasesTitulo}`}
+                        className={`mb-5 text-5xl md:text-5xl lg:text-8xl font-bold  tracking-tighter${item.clasesTitulo}`}
                       >
                         {item.titulo}
                       </h1>

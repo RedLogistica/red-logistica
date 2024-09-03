@@ -52,11 +52,6 @@ export default function MediaSection() {
       key="media"
     >
       <div
-        className="w-full aos-init"
-        data-aos="fade-in"
-        data-aos-duration="300"
-        data-aos-anchor-placement="center"
-        data-aos-easing="linear"
       >
 
         <hgroup className="text-center mb-2">

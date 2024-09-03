@@ -11,6 +11,5 @@ export default function AnimateContent({ content }) {
     Aos.init();
     Aos.refresh();
   },[]);
-
   return <>{content}</>;
 }
