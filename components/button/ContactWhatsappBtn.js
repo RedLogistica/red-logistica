@@ -3,7 +3,8 @@ export default function ContactWhatsappBtn({children, msg="Hola, me contactó de
     const message = msg;
     return (
         <div className="">
-            <a href={`https://web.whatsapp.com/send/?phone=${phone}&text=${message}`} className={className} target="_blank">{children}</a>
+            <a href={`https://api.whatsapp.com/send/?phone=${phone}&text=${message}`} className={className} target="_blank">{children}</a>
         </div>
     )
 }
+

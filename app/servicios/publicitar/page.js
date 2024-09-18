@@ -8,7 +8,7 @@ export default function Publicidad() {
                     <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
                         <img
                             alt="imagen"
-                            src="/red-logistica/imgs/project.webp"
+                            src="/imgs/project.webp"
                             className="absolute inset-0 h-full w-full object-cover"
                         />
                     </div>

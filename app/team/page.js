@@ -2,7 +2,7 @@ import { teamMetadata } from "../utils/metadata/metaTeam";
 import Section from "@/components/SectionLayout";
 
 function getImgPath(imgName) {
-  const imgPath = `/red-logistica/imgs/staff/${imgName}`;
+  const imgPath = `/imgs/staff/${imgName}`;
   return imgPath;
 }
 
