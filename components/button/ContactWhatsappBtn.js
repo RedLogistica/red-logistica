@@ -1,5 +1,5 @@
 export default function ContactWhatsappBtn({children, msg="Hola, me contactó desde su página. Me interesa ...", className}){
-    const phone = " 1151429490";
+    const phone = "1151429490";
     const message = msg;
     return (
         <div className="">
