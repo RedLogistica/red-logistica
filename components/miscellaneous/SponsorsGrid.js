@@ -2,7 +2,7 @@ import Link from "next/link";
 import Section from "../SectionLayout";
 
 function getImgPath(imgName) {
-  const imgPath = `/red-logistica/imgs/sponsors/${imgName}`;
+  const imgPath = `/imgs/sponsors/${imgName}`;
   return imgPath;
 }
 

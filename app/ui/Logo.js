@@ -1,5 +1,5 @@
 export default function Logo({ medida, clases }) {
-  const imgPath = "/red-logistica/imgs/redlogo/rllogo.webp";
+  const imgPath = "/imgs/redlogo/rllogo.webp";
 
   return (
     <div>
