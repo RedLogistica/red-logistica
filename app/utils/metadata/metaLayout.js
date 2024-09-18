@@ -50,8 +50,8 @@ export const layoutMetadata = {
         images: [
           {
             url: "https://red-logistica.org/opengraph-image.png", // URL de tu imagen
-            width: 500, // Ancho de la imagen
-            height: 500,  // Alto de la imagen
+            width: 1200, // Ancho de la imagen
+            height: 630,  // Alto de la imagen
             alt: "Logo de Red Logística"  // Texto alternativo de la imagen
           }
         ]
