@@ -25,7 +25,7 @@ export default function DesktopNav({ toggleAside, isOpen }) {
       <div className="bg-black px-4 py-3 text-white z-50">
         <p className="text-center text-xs font-medium opacity-85">
           Mira nuestro programa todos los sábados de 14 a 15:30. ¡No te lo pierdas!{" "}
-          <a href="/red-logistica/media" className="inline-block underline">Ver más</a>
+          <a href="/media" className="inline-block underline">Ver más</a>
         </p>
       </div>
       <header

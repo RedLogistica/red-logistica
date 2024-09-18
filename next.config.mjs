@@ -11,7 +11,7 @@ const nextConfig = {
   // skipTrailingSlashRedirect: true,
 
   // Optional: Change the output directory `out` -> `dist`
-  basePath: "/red-logistica",
+  basePath: "/",
 };
 
 export default nextConfig;
